@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="favicon.png"/>
+        <meta name="theme-color" content="#1abc9c"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="lib/leaflet.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <title>Agence Digitale</title>
+        <meta name="keyword" content="digital, digitale, web, agence, numérique, france, internet"/>
+        <meta name="description" content="Agence Digitale .io prend en main votre projet web pour le graphisme, le développement web, la communication ou le marketing !"/>
+    </head>
+    <body>
+        <header>
+            <h1><span>Agence</span><span>Digitale</span><span>.io</span></h1>
+            <h4>Parce que nous faisons beaucoup de choses avec nos doigts</h4>
+            <nav>
+                <a href="#" id="logo">A</a>
+                <a href="#realisations">Nos réalisations</a>
+                <a href="#retrouvezNous">Retrouvez-nous</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <span id="descendre"><a href="#triptyque"><i class="fa fa-angle-down"></i></a></span>
+        </header>
+        <main>
+            <div id="triptyque">
+                <span>
+                    <i class="fa fa-mouse-pointer"></i>
+                    <h2>Site web</h2>
+                    <p>Nous réalisons votre site web comme vous le souhaitez, et toute l'agence met la main à la pâte pour vous proposer un service de qualité.</p>
+                </span>
+                <span>
+                    <i class="fa fa-paint-brush"></i>
+                    <h2>Identité graphique</h2>
+                    <p>L'identité graphique c'est l'empreinte digitale d'une marque, c'est pour cela que l'Agence Digitale est spécialisée dans le design graphique.</p>
+                </span>
+                <span>
+                    <i class="fa fa-bullhorn"></i>
+                    <h2>Communication</h2>
+                    <p>Pour se faire connaitre, il faut communiquer en touchant le plus de monde possible, et l'Agence Digitale réussira vos campagnes.</p>
+                </span>
+            </div>
+
+            <div id="realisations">
+                <h2>Le touché français</h2>
+                <h3>Nos réalisations</h3>
+                <span>
+                    <img src="img/dessin_main.png" alt="Concours de dessin d'une main dessinant" title="Concours de dessin d'une main dessinant"/>
+                </span>
+                <span>
+                    <img src="img/main_francaise.png" alt="Campagne de communication : Bleu Blanc Main" title="Campagne de communication : Bleu Blanc Main"/>
+                </span>
+                <span>
+                    <img src="img/main_road.jpg" alt="Design de panneau routier" title="Design de panneau routier"/>
+                </span>
+                <span>
+                    <img src="img/poignee.png" alt="Logo pour une application : Poignée confiance" title="Logo pour une application : Poignée confiance"/>
+                </span>
+                <span>
+                    <img src="img/respect_ma_main.jpg" alt="Campagne de communication institutionnelle" title="Campagne de communication institutionnelle"/>
+                </span>
+                <span>
+                    <img src="img/thunes_dans_les_mains.jpg" alt="Marketing direct" title="Marketing direct"/>
+                </span>
+            </div>
+            <div id="quote">
+                <h1><i class="fa fa-quote-left"></i> Avec l'Agence Digitale, vous êtes entre de bonnes mains !</h1>
+            </div>
+            <div id="retrouvezNous">
+                <h2>Mettez un pouce en l'air</h2>
+                <h3>Retrouvez-nous</h3>
+                <span>
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-youtube-square"></i>
+                    <i class="fa fa-pinterest-square"></i>
+                    <i class="fa fa-behance-square"></i>
+                    <i class="fa fa-envelope-square"></i>
+                    <i class="fa fa-tumblr-square"></i>
+                    <i class="fa fa-lastfm-square"></i>
+                    <i class="fa fa-steam-square"></i>
+                </span>
+            </div>
+            <div id="contact">
+                <h2>Touchons-nous</h2>
+                <h3>Contact</h3>
+                <form>
+                    <label><span>Nom</span><input type="text"/></label>
+                    <label><span>Email</span><input type="text"/></label>
+                    <label><span>Message</span><textarea></textarea></label>
+                    <input type="submit" value="Envoyer"/>
+                </form>
+            </div>
+            <div id="map"></div>
+        </main>
+        <footer>
+            <p>Fait avec les mains par des français.</p>
+        </footer>
+    </body>
+    <script type="text/javascript" src="//dav.li/jquery/2.1.4.js"></script>
+    <script type="text/javascript" src="lib/leaflet.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</html>

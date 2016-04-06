@@ -1,0 +1,255 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+::-moz-selection {
+    background: rgba(0,0,0,0.1);
+}
+::selection {
+    background: rgba(0,0,0,0.1);
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url(font/Lobster.otf);
+}
+@font-face {
+    font-family: 'FORCED SQUARE';
+    src: url(font/FORCED_SQUARE.ttf);
+}
+
+
+header {
+    position: relative;
+    background-color: #1abc9c;
+    background-image: url(img/headerBackground.jpg);
+    background-size: cover;
+    padding: 35vh 0;
+}
+
+header>h1 {
+    font-size: 80px;
+    line-height: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+header>h1>span:first-child {
+    font-family: 'Lobster', cursive;
+    margin-right: 15px;
+}
+header>h1>span:nth-child(2) {
+    font-family: 'FORCED SQUARE', sans-serif;
+}
+header>h1>span:nth-child(3) {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    top: -34px;
+    font-size: 0.5em;
+    background-color: white;
+    color: #1abc9c;
+    height: 50px;
+    width: 50px;
+    line-height: 69px;
+}
+
+header>h4 {
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding-left: 10vw;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: white;
+    border-bottom: 10px solid #1abc9c;
+    overflow: hidden;
+    z-index: 99;
+}
+nav>a {
+    margin-right: 50px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+nav>a:hover {
+    color: #1abc9c;
+}
+#logo {
+    position: absolute;
+    font-size: 130px;
+    font-family: 'Lobster', cursive;
+    color: #1abc9c;
+}
+nav>a:nth-child(2){
+    margin-left: 110px;
+}
+
+#descendre {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+#descendre>a {
+    color: white;
+}
+
+
+
+main>div {
+    position: relative;
+    margin: 80px 10vw;
+}
+main h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 42px;
+}
+
+
+#triptyque>span {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    text-align: center;
+}
+#triptyque>span>i {
+    font-size: 150px;
+}
+#triptyque>span>h2 {
+    text-align: center;
+    color: #1abc9c;
+}
+#triptyque>span>p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+#realisations>span {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border: 10px solid #1abc9c;
+    border-radius: 100%;
+    background-color: #636363;
+}
+#realisations>span:hover {
+    cursor: pointer;
+    border-color: black;
+}
+#realisations>span>img {
+    position: absolute;
+    height: 100%;
+}
+
+#quote{
+    margin: 20px 0;
+    padding: 0 10vw;
+    height: 150px;
+    background-color: #1abc9c;
+}
+#quote>h1 {
+    font-size: 40px;
+    line-height: 150px;
+    white-space: nowrap;
+    color: white;
+}
+
+
+#retrouvezNous>span {
+    font-size: 75px;
+}
+#retrouvezNous>span>i{
+    color: #1abc9c;
+}
+#retrouvezNous>span>i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+#contact {
+    margin-bottom: 10px;
+}
+
+form{
+    position: absolute;
+    display: block;
+    top: 120px;
+    width: 300px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 50;
+}
+form>label {
+    display: block;
+    margin: 5px 0;
+    vertical-align: top;
+}
+form>label>span {
+    display: inline-block;
+    vertical-align: top;
+    width: 96px;
+}
+form>label>input, form>label>textarea {
+    width: 200px;
+}
+form>[type="submit"]{
+    padding: 10px;
+    color: white;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+}
+form>[type="submit"]:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+#map {
+    margin: 0;
+    height: 300px;
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+footer {
+    padding: 20px 10vw;
+    background-color: #1abc9c;
+}
+footer>p {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
