@@ -225,26 +225,26 @@ main h2 {
 #triptyque {
     text-align: center;
 }
-#triptyque>span:hover {
+#triptyque>div:hover {
     cursor: pointer;
 }
-#triptyque>span:hover h2{
+#triptyque>div:hover h2{
     text-decoration: underline;
 }
-#triptyque>span:hover i{
+#triptyque>div:hover i{
     top:  -10px;
     right: -10px;
     text-shadow: -10px 10px 0 #1abc9c;
 }
 
-#triptyque>span {
+#triptyque>div {
     display: inline-block;
     width: 23vw;
     margin: 40px 1vw;
     vertical-align: top;
 }
 @media screen and (max-width: 900px){
-    #triptyque>span {
+    #triptyque>div {
         display: block;
         width: auto;
     }
