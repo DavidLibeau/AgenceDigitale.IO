@@ -1,3 +1,5 @@
+/** GENERAL **/
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -6,13 +8,15 @@ body {
     padding: 0;
 }
 
-#realisations span, #retrouvezNous i {
+/* Animation */
+#realisations, #realisations *, #retrouvezNous i {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
 
 ::-moz-selection {
     background: rgba(0,0,0,0.1);
@@ -31,13 +35,18 @@ body {
 }
 
 
+/** HEADER **/
+
 header {
     position: relative;
+    padding: 35vh 10vw;
+    overflow: hidden;
+}
+header, #quote {
     background-color: #1abc9c;
     background-image: url(img/headerBackground.jpg);
     background-size: cover;
-    padding: 35vh 10vw;
-    overflow: hidden;
+    background-attachment: fixed;
 }
 
 header>h1 {
@@ -116,6 +125,7 @@ header>h4 {
     }
 }
 
+/* Menu */
 nav {
     position: fixed;
     top: 0;
@@ -189,7 +199,7 @@ nav>i:hover {
     display: block;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 80vw;
     text-align: center;
     font-size: 60px;
     color: white;
@@ -199,6 +209,7 @@ nav>i:hover {
 }
 
 
+/** MAIN **/
 
 main>div {
     position: relative;
@@ -210,9 +221,22 @@ main h2 {
 }
 
 
+/* Triptyque */
 #triptyque {
     text-align: center;
 }
+#triptyque>span:hover {
+    cursor: pointer;
+}
+#triptyque>span:hover h2{
+    text-decoration: underline;
+}
+#triptyque>span:hover i{
+    top:  -10px;
+    right: -10px;
+    text-shadow: -10px 10px 0 #1abc9c;
+}
+
 #triptyque>span {
     display: inline-block;
     width: 23vw;
@@ -225,40 +249,79 @@ main h2 {
         width: auto;
     }
 }
-#triptyque>span>i {
+#triptyque i {
+    position: relative;
     font-size: 150px;
+    text-shadow: 0px 0px 0 #1abc9c;
 }
-#triptyque>span>h2 {
+#triptyque h2 {
     text-align: center;
     color: #1abc9c;
 }
-#triptyque>span>p {
+#triptyque p {
     text-align: center;
     font-size: 20px;
 }
 
 
-
-#realisations>span {
+/* Portfolio */
+#realisations>figure{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#realisations span {
     position: relative;
     display: inline-block;
     width: 200px;
     height: 200px;
-    margin: 20px;
-    overflow: hidden;
     border: 10px solid #1abc9c;
     border-radius: 100%;
     background-color: #636363;
+    overflow: hidden;
 }
-#realisations>span:hover {
-    cursor: pointer;
+#realisations>figure:hover span {
     border-color: black;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
-#realisations>span>img {
+#realisations img {
     position: absolute;
     height: 100%;
 }
+#realisations figcaption {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    padding: 10px;
+    margin: 0 -10px;
+    width: 220px;
+    background-color: white
+}
+#realisations>figure:hover figcaption {
+    bottom: 40px;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#realisations figcaption>i {
+    float: right;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 6px;
+    padding-right: 4px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #1abc9c;
+}
+#realisations figcaption:hover>i{
+    color: white;
+}
 
+/* Quote */
 #quote{
     margin: 20px 0;
     min-height: 150px;
@@ -273,6 +336,7 @@ main h2 {
 }
 
 
+/* Contact */
 #retrouvezNous>span {
     font-size: 75px;
 }
@@ -297,6 +361,7 @@ form{
     background-color: white;
     border-radius: 10px;
     z-index: 50;
+    overflow: hidden;
 }
 form>label {
     display: block;
@@ -322,6 +387,13 @@ form>[type="submit"]:hover {
     cursor: pointer;
     opacity: 0.8;
 }
+form>i {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    font-size: 130px!important;
+    opacity: 0.02;
+}
 
 
 #map {
@@ -333,6 +405,9 @@ form>[type="submit"]:hover {
 }
 
 
+
+/** FOOTER **/
+
 footer {
     padding: 20px 10vw;
     background-color: #1abc9c;
@@ -342,8 +417,14 @@ footer>p {
     font-size: 20px;
     font-style: italic;
 }
+footer a {
+    color: white;
+    float: right;
+    margin: 0 5px;
+}
 
 
+/** Responsive **/
 
 @media screen and (max-width: 360px) {
     main h2 {
@@ -355,10 +436,19 @@ footer>p {
 }
 
 @media screen and (max-width: 650px) {
-    #realisations>span {
+    #realisations>figure{
+        width: 170px;
+        height: 170px;
+    }
+    #realisations>figure span {
         width: 150px;
         height: 150px;
-        margin: 10px;
+    }
+    #realisations figcaption {
+        width: 170px;
+    }
+    #realisations > figure:hover figcaption {
+        bottom: 20px;
     }
     #retrouvezNous>span {
         font-size: 60px;
@@ -369,5 +459,8 @@ footer>p {
     form {
         top: 178px;
         right: 0;
+    }
+    footer a {
+        float: none;
     }
 }
