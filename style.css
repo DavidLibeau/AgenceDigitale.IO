@@ -365,6 +365,7 @@ form{
 }
 form>label {
     display: block;
+    position: relative;
     margin: 5px 0;
     vertical-align: top;
 }
@@ -375,6 +376,9 @@ form>label>span {
 }
 form>label>input, form>label>textarea {
     width: 200px;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255,255,255,0);
 }
 form>[type="submit"]{
     padding: 10px;
